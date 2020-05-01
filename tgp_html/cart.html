@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en"><head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="generator" content="Jekyll v3.8.6">
@@ -8,7 +9,7 @@
     <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/bootstrap.css" rel="stylesheet">
 
     <!-- Favicons -->
 
@@ -36,8 +37,10 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- Links to javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+            integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+            crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script>window.jQuery </script>
 
@@ -45,7 +48,8 @@
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
     <a class="navbar-brand" href="index.html">The GameStore</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -89,13 +93,14 @@
                         </tr>
                     </table>
                     <br>
-                    <p><button class="btn btn-primary" type="submit">Update Cart</button>
-                    <a class="btn btn-primary" href="cart">Go To Cart</a></p>
+                    <p>
+                        <button class="btn btn-primary" type="submit">Update Cart</button>
+                        <a class="btn btn-primary" href="cart">Go To Cart</a></p>
                 </form>
             </div>
             <!--     Categories       -->
             <div class="card ">
-                <div class="card-header card-header-dark">
+                <div class="card-header text-white bg-dark">
                     <h3 class="card-title">Categories</h3>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -126,64 +131,72 @@
         <!------------------------------------- The Game Store ------------------------------->
         <div class="col-md-8">
 
-            <div class="card " >
+            <div class="card ">
                 <div class="card-header card-header-blue">
                     <h3 class="card-title">The GameStore</h3>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game1.jpg"></a>
-                            <div class="game-title">Destiny</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game2.jpg"></a>
-                            <div class="game-title">Call Of Duty Ghosts</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game3.jpg"></a>
-                            <div class="game-title">WatchDogs</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game4.jpg"></a>
-                            <div class="game-title">Batman</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€49.99</div>
-                            <a href="product.html"><img src="images/game5.jpg"></a>
-                            <div class="game-title">Shadow of Mordor </div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.59</div>
-                            <a href="product.html"><img src="images/game6.jpg"></a>
-                            <div class="game-title">Sniper Elite</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div><!-- row -->
-                    <div class="row">
 
+                    <table class="table table-striped">
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Call Of Duty: Ghosts - Xbox One</td>
+                            <td>1</td>
+                            <td>€59.99</td>
+                        </tr>
+                        <tr>
+                            <td>Destiny - Xbox One</td>
+                            <td>1</td>
+                            <td>€59.99</td>
+                        </tr>
+                        <tr>
+                            <td>Watch Dogs - PS3</td>
+                            <td>1</td>
+                            <td>€59.99</td>
+                        </tr>
+
+                        <tr>
+                            <td colspan="3" class="cart-subtotal">
+                                Subtotal: €179.97
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cart-shipping">
+                                Shipping: €6.99
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" class="cart-total">
+                                Shipping: €186.96
+                            </td>
+                        </tr>
+                    </table>
+                    <h3>Shipping Info</h3>
+                    <div class="form-group">
+                        <label>Address</label>
+                        <input type="text" class="form-control" name="address">
                     </div>
+                    <div class="form-group">
+                        <label>Address 2</label>
+                        <input type="text" class="form-control" name="address2">
+                    </div>
+                    <div class="form-group">
+                        <label>City</label>
+                        <input type="text" class="form-control" name="city">
+                    </div>
+                    <div class="form-group">
+                        <label>State</label>
+                        <input type="text" class="form-control" name="state">
+                    </div>
+                    <div class="form-group">
+                        <label>Zipcode</label>
+                        <input type="text" class="form-control" name="zipcode">
+                    </div>
+                    <p><button class="btn btn-primary" type="submit" name="submit">Checkout</button></p>
                 </div>
             </div>
         </div>
@@ -192,11 +205,12 @@
 
 <!-- Footer -->
 
-<footer class=" row footer">
+<footer class="footer">
     <div class="container">
-        <p>The Game Store &copy; 2020, All Rights Reserved</p>
+        <span class="text-muted">The Game Store &copy; 2020, All Rights Reserved</span>
     </div>
 </footer>
 
 
-</body></html>
+</body>
+</html>

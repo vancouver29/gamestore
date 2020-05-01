@@ -36,8 +36,8 @@
     <link href="css/custom.css" rel="stylesheet">
 
     <!-- Links to javascript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-<!--    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <!--    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>-->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="js/bootstrap.js"></script>
     <script>window.jQuery </script>
 
@@ -90,12 +90,12 @@
                     </table>
                     <br>
                     <p><button class="btn btn-primary" type="submit">Update Cart</button>
-                    <a class="btn btn-primary" href="cart">Go To Cart</a></p>
+                        <a class="btn btn-primary" href="cart">Go To Cart</a></p>
                 </form>
             </div>
             <!--     Categories       -->
             <div class="card ">
-                <div class="card-header card-header-dark">
+                <div class="card-header text-white bg-dark">
                     <h3 class="card-title">Categories</h3>
                 </div>
                 <ul class="list-group list-group-flush">
@@ -127,62 +127,25 @@
         <div class="col-md-8">
 
             <div class="card " >
-                <div class="card-header card-header-blue">
+                <div class="card-header ">
                     <h3 class="card-title">The GameStore</h3>
                 </div>
                 <div class="card-body">
-                    <div class="row">
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game1.jpg"></a>
-                            <div class="game-title">Destiny</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
+                    <div class="row details">
+                        <div class="col-md-4">
+                            <img src="images/game2.jpg">
+                        </div>
+                        <div class="col-md-8">
+                            <h3>Call Of Duty Ghosts</h3>
+                            <div class="details-price">Price: €59.99</div>
+                            <div class="details-description">
+                                <p>Call of Duty: Ghosts is a 2013 first-person shooter video game developed by Infinity Ward and published by Activision, it is the tenth major installment in the Call of Duty series and the sixth developed by Infinity Ward. It was released for Microsoft Windows, PlayStation 3, Xbox 360, and Wii U on November 5, 2013. The game was released with the launch of the PlayStation 4 and Xbox One.</p>
+                                <p>Ghosts received generally positive to mixed reviews from critics, with most praising its multiplayer gameplay and introduction of the new game mode Extinction, but criticizing it for its single-player campaign, rehashing of familiar concepts, general lack of innovation, and storyline ending.</p>
+                            </div>
+                            <div class="details-buy">
+                                <button type="submit" name="buy_submit" class="btn btn-primary">Add To Cart</button>
                             </div>
                         </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game2.jpg"></a>
-                            <div class="game-title">Call Of Duty Ghosts</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game3.jpg"></a>
-                            <div class="game-title">WatchDogs</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.99</div>
-                            <a href="product.html"><img src="images/game4.jpg"></a>
-                            <div class="game-title">Batman</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€49.99</div>
-                            <a href="product.html"><img src="images/game5.jpg"></a>
-                            <div class="game-title">Shadow of Mordor </div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                        <div class="col-md-4 game">
-                            <div class="game-price">€59.59</div>
-                            <a href="product.html"><img src="images/game6.jpg"></a>
-                            <div class="game-title">Sniper Elite</div>
-                            <div class="game-add">
-                                <button class="btn btn-primary" type="submit">Add To Cart</button>
-                            </div>
-                        </div>
-                    </div><!-- row -->
-                    <div class="row">
-
                     </div>
                 </div>
             </div>
@@ -192,9 +155,9 @@
 
 <!-- Footer -->
 
-<footer class=" row footer">
+<footer class="footer">
     <div class="container">
-        <p>The Game Store &copy; 2020, All Rights Reserved</p>
+        <span class="text-muted">The Game Store &copy; 2020, All Rights Reserved</span>
     </div>
 </footer>
 
