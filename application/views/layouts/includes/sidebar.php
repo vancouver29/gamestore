@@ -23,14 +23,9 @@
         <h3 class="card-title">Categories</h3>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="#">Gaming Consoles</a></li>
-        <li class="list-group-item"><a href="#">Xbox One Games</a></li>
-        <li class="list-group-item"><a href="#">Playstation 4 Games</a></li>
-        <li class="list-group-item"><a href="#">Nintendo Wii U Games</a></li>
-        <li class="list-group-item"><a href="#">Xbox 360 Games</a></li>
-        <li class="list-group-item"><a href="#">Playstation 3 Games</a></li>
-        <li class="list-group-item"><a href="#">Nitendo Wii Games</a></li>
-        <li class="list-group-item"><a href="#">Other Console Games</a></li>
+        <?php foreach (get_categories_h() as $category): ?>
+            <li class="list-group-item"><a href="<?php echo base_url(); ?>products/category/<?php echo $category->id;?>"><?php echo $category->name; ?></a></li>
+        <?php endforeach; ?>
 
     </ul>
 </div>
@@ -40,7 +35,7 @@
         <h3 class="card-title">Most Popular</h3>
     </div>
     <ul class="list-group list-group-flush">
-        <li class="list-group-item"><a href="#">Destiny</a></li>
-        <li class="list-group-item"><a href="#">Watch Dogs</a></li>
-        <li class="list-group-item"><a href="#">Shadow of Mordor</a></li>
+        <?php foreach (get_popular_h() as $popular): ?>
+            <li class="list-group-item"><a href="http://localhost:8888/gameStore/products/details/<?php echo $popular->id;?>"><?php echo $popular->title;?></a></li>
+        <?php endforeach; ?>
     </ul>
