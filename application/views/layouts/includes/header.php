@@ -45,7 +45,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-    <a class="navbar-brand" href="index.html">The GameStore</a>
+    <a class="navbar-brand" href="http://localhost:8888/gameStore/">The GameStore</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
             aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -54,10 +54,10 @@
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="http://localhost:8888/gameStore/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="register.html">Create Account</a>
+                <a class="nav-link" href="http://localhost:8888/gameStore/user/register">Create Account</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
