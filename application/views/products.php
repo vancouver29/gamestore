@@ -1,3 +1,9 @@
+<?php if ($this->session->flashdata('registered')): ?>
+    <div class="alert alert-success">
+        <?php echo $this->session->flashdata('registered'); ?>
+    </div>
+<?php endif; ?>
+
 <div class="row">
     <?php foreach ($products as $product): ?>
         <div class="col-md-4 game">

@@ -57,7 +57,7 @@
                 <a class="nav-link" href="http://localhost:8888/gameStore/">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8888/gameStore/user/register">Create Account</a>
+                <a class="nav-link" href="http://localhost:8888/gameStore/users/register">Create Account</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
