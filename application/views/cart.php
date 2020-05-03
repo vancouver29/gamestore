@@ -11,7 +11,7 @@
                 <tr>
                     <td><?php echo $items['qty']; ?></td>
                     <td><?php echo $items['name']; ?></td>
-                    <td style="text-align: right"><?php echo $this->cart->format_number($items['price']); ?></td>
+                    <td style="text-align: right">€<?php echo $this->cart->format_number($items['price']); ?></td>
                 </tr>
                 <?php echo '<input type="hidden" name="item_name[' . $i . ']" value="' . $items['name'] . '">'; ?>
                 <?php echo '<input type="hidden" name="item_code[' . $i . ']" value="' . $items['id'] . '">'; ?>
@@ -35,6 +35,12 @@
             </tr>
         </table>
         <br>
+
+        <?php if (!$this->session->userdata('logged_in')): ?>
+            <p><a href="http://localhost:8888/gameStore/users/register" class="btn btn-primary">Create An Account</a></p>
+            <p><em>You must log in to make purchases</em></p>
+        <?php else: ?>
+
         <h3>Shipping Info</h3>
         <div class="form-group">
             <label>Address</label>
@@ -59,6 +65,8 @@
         <p>
             <button class="btn btn-primary" type="submit" name="submit">Checkout</button>
         </p>
+
+        <?php endif; ?>
     </form>
 <?php else: ?>
     <p>There are no items in your cart</p>

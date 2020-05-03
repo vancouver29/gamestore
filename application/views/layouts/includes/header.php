@@ -56,19 +56,27 @@
             <li class="nav-item active">
                 <a class="nav-link" href="http://localhost:8888/gameStore/">Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="http://localhost:8888/gameStore/users/register">Create Account</a>
-            </li>
+            <?php if (!$this->session->userdata('logged_in')): ?>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8888/gameStore/users/register">Create Account</a>
+                </li>
+            <?php endif; ?>
         </ul>
-        <form class="form-inline my-2 my-lg-0">
-            <div class="form-group">
-                <input name="username" class="form-control mr-sm-2" type="text" placeholder="Enter Username">
-            </div>
-            <div class="form-group">
-                <input name="password" class="form-control mr-sm-2" type="password" placeholder="Enter Password">
-            </div>
-            <button name="submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
-        </form>
+        <?php if (!$this->session->userdata('logged_in')): ?>
+            <form method="post" action="http://localhost:8888/gameStore/users/login" class="form-inline my-2 my-lg-0">
+                <div class="form-group">
+                    <input name="username" class="form-control mr-sm-2" type="text" placeholder="Enter Username">
+                </div>
+                <div class="form-group">
+                    <input name="password" class="form-control mr-sm-2" type="password" placeholder="Enter Password">
+                </div>
+                <button name="submit" class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+        <?php else: ?>
+            <form class="navbar-form navbar-right" method="post" action="http://localhost:8888/gameStore/users/logout">
+                <button name="submit" type="submit" class="btn btn-primary">Logout</button>
+            </form>
+        <?php  endif;?>
     </div>
 </nav>
 
