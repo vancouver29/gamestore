@@ -1,5 +1,5 @@
 <?php if ($this->cart->contents()): ?>
-    <form method="post" action="cart/process">
+    <form method="post" action="http://localhost:8888/gameStore/cart/process">
         <table class="table table-striped">
             <tr>
                 <th>Quantity</th>

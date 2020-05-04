@@ -49,4 +49,11 @@ class Product_model extends CI_Model{
         return $results;
     }
 
+    /*
+     * Add Order To Database
+     */
+    public function add_order($order_data){
+        $insert = $this->db->insert('orders', $order_data);
+        return $insert;
+    }
 }
